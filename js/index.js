@@ -13,7 +13,7 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-java"]').popover({
         title: 'Java',
-        content: 'I learned Java in the Object Oriented Programming discipline at my graduation. In my internship in Index I also made use of Java.',
+        content: 'I learned Java in the Object-Oriented Programming discipline at my graduation. In my internship in Index I also made use of Java.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -80,6 +80,18 @@ $(function(){
     $('[data-toggle="technicalknowledge-popover-mpi"]').popover({
         title: 'MPI',
         content: 'I learned MPI during the course of Parallel Algorithms in my graduation and I also took a mini-course of CUDA + MPI.',
+        placement: 'bottom',
+        trigger: 'hover'
+    });
+    $('[data-toggle="technicalknowledge-popover-riscv"]').popover({
+        title: 'RISC-V',
+        content: 'I learned RISC-V during my teaching internship for my master\'s degree.',
+        placement: 'bottom',
+        trigger: 'hover'
+    });
+    $('[data-toggle="technicalknowledge-popover-arduino"]').popover({
+        title: 'Arduino',
+        content: 'I learned Arduino in my graduation in an optional subject and I had experience during my internship in graduation when developing a turnstile for a university restaurant.',
         placement: 'bottom',
         trigger: 'hover'
     });
