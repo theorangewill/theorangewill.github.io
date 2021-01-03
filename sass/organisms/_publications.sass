@@ -1,0 +1,26 @@
+.publications
+    background-color: var(--cbackground-publications)
+    border-top: 3px dashed black
+    border-bottom: 3px dashed black
+    padding-top: 1rem
+    padding-bottom: 1rem
+    .publications-header
+        text-align: center
+    .publications-body
+        padding: 1rem
+        text-align: justify
+        .publication
+            +transition(0.4s)
+            &:hover
+                border-left: 5px solid var(--chover-publication)
+                padding-left: 5px
+            .publication-text
+                line-height: 0.3rem
+                font-family: $third-font
+                font-size: 0.8rem
+                display: inline
+                &:hover
+                    color: var(--chover-publication)
+                p, b
+                    line-height: 0.3rem
+                    display: inline

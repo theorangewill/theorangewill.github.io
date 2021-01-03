@@ -1,0 +1,52 @@
+.header-container
+    position: relative
+    border-bottom: 4px groove var(--cborder-header)
+    .profile
+        border-top: 4px solid black
+        width: 100%
+        .profile-picture
+            +border-radius(50%)
+            width: 10%
+            +breakpoint($breakpoint-md)
+                width: 20%
+            +breakpoint($breakpoint-sm)
+                width: 30%
+            padding: 0.5rem
+            margin: auto
+            margin-top: 10px
+            +transition(1s)
+            &:hover
+                +opacity(0.8)
+                background-color: var(--chover-profile)
+        .profile-name 
+            margin: auto
+            text-align: center
+            font-size: 2rem
+        .profile-bio
+            margin: auto
+            width: 80%
+        .profile-links
+            +flexbox
+            flex-direction: row
+            justify-content: center
+            padding-bottom: 1rem
+            font-size: 1.5rem
+            i
+                margin: 5px
+                +transition(1s)
+                &:hover
+                    color: var(--chover)
+        .profile-email
+            width: 200px
+            object-fit: contain
+            margin: 5px auto 0 auto
+
+    .header-bar
+        border-bottom: 5px solid black
+        .logo-container
+            margin-left: 10%
+            font-size: 1.5rem
+            font-family: $third-font
+            +transition(1s)
+            &:hover
+                color: var(--chover)

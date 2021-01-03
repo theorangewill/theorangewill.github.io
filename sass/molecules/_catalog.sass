@@ -1,0 +1,104 @@
+.catalog
+    margin: 1rem 15rem
+    +breakpoint($breakpoint-lg)
+        margin: 1rem 5rem
+    +breakpoint($breakpoint-sm)
+        margin: 1rem 1rem
+    +breakpoint($breakpoint-smartphone)
+        margin: 1rem 0rem
+    .catalog-header
+        width: 30%
+        +breakpoint($breakpoint-lg)
+            width: 50%
+        background-color: var(--cborder-catalog)
+        +border-radius(2rem 2rem 0 0)
+        margin: 0 auto
+        h2
+            margin: 0
+            text-align: center
+            font-size: 1.2rem
+            color: var(--cfont-catalog-header)
+    .catalog-body
+        box-shadow: 0 1px 2px var(--cshadow-catalog)
+        padding: 0.2rem
+        width: 100%
+        background-color: var(--cbackground-catalog)
+        +border-radius(10px)
+        border: 2px solid var(--cborder-catalog)
+        margin: auto
+        .line
+            width: 80%
+            margin: 0.5rem auto
+            border: 1px inset var(--cdivider-catalog)
+            background-color: var(--cdivider-catalog)
+        .catalog-item
+            margin: 0.5rem auto
+            padding: 0.2rem 1rem
+            position: relative
+            .catalog-item-title
+                font-family: $second-font
+                font-size: 1.5rem
+                &::after
+                    display: table
+                    width: 0%
+                    height: 2px
+                    background-color: var(--cprimary) 
+                    content: ""
+                    +transition(0.4s)
+                &:hover
+                    &::after
+                        width: 70%
+            .catalog-item-occupation
+                font-family: $second-font
+                font-size: 0.8rem
+            .catalog-item-date
+                font-family: $third-font
+                font-size: 0.8rem
+                text-align: right
+            .catalog-item-location
+                font-family: $third-font
+                font-size: 0.8rem
+                text-align: right
+            .catalog-item-body
+                background-color: var(--cobject)
+                padding: 0
+                margin-bottom: 0.5rem
+                +border-radius(0 0 20px 20px)
+                .catalog-item-body-title
+                    &.ativo
+                        +border-radius(0)
+                    +border-radius(0 0 10px 10px)
+                    background-color: var(--cobjectdark)
+                    padding: 0.3rem 1rem
+                    margin: 0px
+                    font-size: 0.8rem
+                    color: var(--cobjectdarkfont)
+                    +transition(1s)
+                    &:hover
+                        color: var(--cfont-catalog-item-body-title-hover)
+                        i
+                            color: var(--cfont-catalog-item-body-title-hover)
+                    i
+                        color: var(--cobjectdarkfont)
+                        padding-right: 0.5rem
+
+                .catalog-item-body-text
+                    +transition(1s)
+                    background-color: var(--cbackground-catalog)
+                    border: 1px solid var(--cborder-catalog)
+                    text-align: justify
+                    line-height: 1rem
+                    padding: 0.3rem 1rem 0.3rem 1rem
+                    font-family: $font-second
+                    font-size: 0.7em
+                    //color: var(--cobjectfont) !important
+                    margin: 0
+                    +opacity(0)
+                    max-height: 0px
+                    overflow: hidden
+                    &.ativo
+                        +opacity(1)
+                        max-height: 1000px
+                    p
+                        //color: var(--cobjectfont)
+

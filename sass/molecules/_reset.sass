@@ -1,0 +1,95 @@
+@import ../molecules/mixins
+
+html
+  //General colors
+  --cfont: #282829
+  --cbackground: #e0e0e0
+  --chover: #ff810b
+  --cprimary:  #c25a00
+  --cprimarylight: #eb6e01
+  --cprimarydark: #a74f01
+  --cpagebackground: #cccccc
+  --cpagebackgroundpoints: #4f4f4f
+  //Header colors
+  --chover-profile: #7d7d7d
+  --cborder-header: #ff810b
+  //Footer colors
+  --cbackgroubd-footer: #bfbfbf
+  --cfont-footer: #282829
+  //Github projects colors
+  --cbackground-github:  #c95203
+  --cfont-github-title: #ffffff
+  //Personal projects colors
+  --cfont-projects-title: #474747
+  --cbackground-button: #fc6600
+  --cbackground-button-hover: #fc6600
+  --cfont-button: #3a3131
+  --cfont-button-hover: #9c9c9c
+  //Skills colors
+  --cbackground-skills: #9e9e9e
+  --cbackground-points-skills: #4f4f4f
+  --cprogress-skills: #e25a00
+  --cfont-skills-title: #ffffff
+  //Publications colors
+  --chover-publication: #c95203
+  --cbackground-publications: #bfbfbf
+  //Catalog colors
+  --cbackground-catalog: #eeeeee
+  --cborder-catalog: #464343
+  --cfont-catalog-header: #bfbfbf
+  --cfont-catalog-item-body-title-hover: #fc6600
+  --cshadow-catalog: #fc6600
+  --cdivider-catalog: #773001
+  --cafter-catalog-item-title: #fc6600
+  --cobject: #6b6b6b
+  --cobjectdark: #474747
+  --cobjectfont: #bdbdbd
+  --cobjectdarkfont: #c9c9c9
+  
+
+body
+  font-family: $font-main, sans-serif !important
+  font-weight: $normal
+  line-height: 1
+  strong
+    font-weight: $bold
+
+  
+html, body, div, span, applet, object, iframe, button, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  display: block
+  color: var(--cfont)
+  vertical-align: baseline
+  -webkit-font-smoothing: antialiased
+  word-wrap: break-word
+
+h2
+  font-weight: $bold
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+ul
+  list-style: none
+
+a
+  +transition(.5s)
+  color: var(--cprimary) !important
+  display: inline
+  &:hover
+    text-decoration: none !important
+    color: var(--cprimarylight) !important
+  &:focus
+    text-decoration: none !important
+    color: var(--cprimarydark) !important
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.body-container
+  flex: 1
