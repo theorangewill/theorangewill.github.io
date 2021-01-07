@@ -7,13 +7,13 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-python"]').popover({
         title: 'Python',
-        content: 'I started to learn Python in my first year of graduation with some professors and students that wanted to translate the Python\'s book to portuguese. I also was a learning mentor for high school students who wanted to learn Python. The code developed in my master\'s degree was also developed in Python.',
+        content: 'I started to learn Python in my first year of graduation with some professors and students that wanted to translate the Python\'s book to portuguese. I also was a learning mentor for high school students who wanted to learn Python. I also used Python to develop the monitoring sysmtem in my master\'s degree.',
         placement: 'bottom',
         trigger: 'hover'
     });
     $('[data-toggle="technicalknowledge-popover-java"]').popover({
         title: 'Java',
-        content: 'I learned Java in the Object-Oriented Programming discipline at my graduation. In my internship in Index I also made use of Java.',
+        content: 'I learned Java in the Object-Oriented Programming discipline at my graduation. In my internship in Index, I also developed in Java.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -25,7 +25,7 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-openmp"]').popover({
         title: 'OpenMP',
-        content: 'I got to know OpenMP during the research for my undergraduate thesis and developed the whole solution with it.',
+        content: 'I got to know OpenMP during the research for my undergraduate thesis and developed the all solutions with it.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -55,7 +55,7 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-latex"]').popover({
         title: 'LaTeX',
-        content: 'I learned LaTeX in my first year of graduation when translating the Python\'s book into portuguese. I have always used Overleaf to write my college assignments, including articles and master\'s thesis. I also taught a mini-course for LaTeX beginners at the university.',
+        content: 'I learned LaTeX in my first year of graduation when translating the Python\'s book into portuguese. I have always used Overleaf to write my college assignments, including articles and master\'s thesis. I also taught a mini-course for beginners at the university.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -67,7 +67,7 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-linux"]').popover({
         title: 'Linux',
-        content: 'Linux has been the main operating system since 2014, both for development and leisure.',
+        content: 'Linux has been my main operating system since 2014, both for development and leisure.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -91,10 +91,16 @@ $(function(){
     });
     $('[data-toggle="technicalknowledge-popover-arduino"]').popover({
         title: 'Arduino',
-        content: 'I learned Arduino in my graduation in an optional subject and I had experience during my internship in graduation when developing a turnstile for a university restaurant.',
+        content: 'I learned Arduino in my graduation in an optional subject and I had experience during my internship in graduation when developing a turnstile for an university restaurant.',
         placement: 'bottom',
         trigger: 'hover'
     });
+    $('[data-toggle="technicalknowledge-popover-zabbix"]').popover({
+        title: 'Zabbix',
+        content: 'I learned a lot about Zabbix during my master\'s degree. The monitoring system that I developed uses Zabbix as a server and monitor agent.',
+        placement: 'bottom',
+        trigger: 'hover'
+    });   
 
 
 
@@ -106,13 +112,13 @@ $(function(){
     });
     $('[data-toggle="theoryknowledge-popover-parallel"]').popover({
         title: 'Parallel Programming',
-        content: 'My undergraduate thesis was focused on parallelizing Lee\'s algorithm and that taught me parallel techniques and how to get around problems that parallelism faces. It also helped me to develop parallel thinking when I am coding.',
+        content: 'My undergraduate thesis was focused on parallelizing Lee\'s algorithm and that taught me parallel techniques and how to get around problems that parallelism faces. It made me parallel oriented when I am coding.',
         placement: 'bottom',
         trigger: 'hover'
     });
     $('[data-toggle="theoryknowledge-popover-cloud"]').popover({
         title: 'Cloud Computing',
-        content: 'My master\'s is all focused in cloud computing. My proposed required me to learn how this environment works and to understand different AWS services.',
+        content: 'My master\'s is all focused in cloud computing. My proposal required me to learn how this environment works and to understand different AWS services.',
         placement: 'bottom',
         trigger: 'hover'
     });
@@ -124,7 +130,7 @@ $(function(){
     });
     $('[data-toggle="theoryknowledge-popover-web"]').popover({
         title: 'Web Programming',
-        content: 'To learn more about web programming, I started to create a template using HTML and CSS, in the end it became a Wordpress theme.',
+        content: 'To learn more about web programming, I started to create a template using HTML and CSS. At the end, it became a Wordpress theme.',
         placement: 'bottom',
         trigger: 'hover'
     });
